@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+html, #root {
+  height: 100%;
+}
+
+
+.App {
+  text-align: center;
+  background-image: url('https://i.pinimg.com/originals/68/4f/9c/684f9cb48018f50dbcbcbce073b8d874.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: inline-block;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1 0 auto;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f0eeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.revealed {
+  background-color: #ccc;
+}
+
+.reset-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #0056b3;
+}
+
+.flag-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.timer {
+  color: white;
+}
